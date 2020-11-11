@@ -1,0 +1,105 @@
+.task {
+  display: flex;
+  flex-direction: column;
+}
+
+.task__listItem {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  height: max-content;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.task__listInfo {
+  display: flex;
+  flex: 1;
+  border-left: 3px solid white;
+  border-radius: 2px;
+  height: fit-content;
+  align-items: center;
+}
+
+.task__taskMark {
+  padding-left: 5px;
+  margin-bottom: -7px;
+  color: red;
+}
+
+.task__listInfo > h4 {
+  flex: 1;
+  padding: 2px 0;
+  padding-left: 3px;
+  margin-left: 2px;
+  font-weight: 500;
+  height: fit-content;
+}
+
+.task__editTask {
+  display: none !important;
+  color: rgb(201, 201, 201);
+  width: 19px !important;
+  height: 19px !important;
+}
+
+.task__editTask:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+
+.task__listItem > input {
+  margin-right: 5px;
+}
+
+.task__listItem > input:checked + .task__listInfo > h4 {
+  text-decoration: line-through;
+}
+
+.task__listItem > input:checked + .task__listInfo {
+  border-left-color: white !important;
+  background-color: white !important;
+}
+
+/* Sidebar menu */
+.task__sidebar {
+  display: flex;
+  flex: 0;
+  align-items: center;
+  z-index: 1;
+  margin: 2px 5px;
+  padding-left: 2px;
+  border-left: 1px solid lightgray;
+  height: 15px;
+}
+
+.task__sidebarDelete {
+  color: rgb(201, 201, 201);
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.task__sidebarColor {
+  width: 23px !important;
+  height: 23px !important;
+  margin: -2px !important;
+  cursor: pointer;
+}
+
+.task__sidebarColor:hover {
+  filter: brightness(105%);
+}
+
+/* Desktop view */
+@media only screen and (min-width: 768px) {
+  .task__sidebar > .MuiSvgIcon-root:hover {
+    color: darkgray;
+  }
+
+  .task__editTask {
+    display: flex !important;
+  }
+
+  .task__listItem > input:hover {
+    cursor: pointer;
+  }
+}

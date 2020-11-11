@@ -1,0 +1,124 @@
+.classCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 30px;
+  margin: 10px;
+  height: fit-content;
+  min-height: 300px;
+}
+
+/* delete card */
+.classCard__remove {
+  display: flex;
+  text-align: right;
+  margin-left: -30px;
+  padding: 5px;
+}
+
+.classCard:hover > .classCard__header > .classCard__remove {
+  display: flex;
+  cursor: pointer;
+}
+
+.classCard__removeBtn {
+  width: 23px !important;
+  height: 23px !important;
+  color: rgb(201, 201, 201);
+}
+
+.classCard__removeBtn:hover {
+  color: darkgray;
+}
+
+/* header section */
+.classCard__header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.classCard__class {
+  display: flex;
+  flex: 1;
+  padding-bottom: 5px;
+  margin-right: 30px;
+}
+
+.classCard__launch {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.classCard__teacher {
+  padding-right: 30px;
+  font-weight: 500;
+}
+
+a {
+  height: 15px;
+}
+
+a > .MuiSvgIcon-root {
+  width: 15px;
+  height: 15px;
+}
+
+/* list section */
+.classCard__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 20px;
+}
+
+.classCard__list > h3 {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.classCard__listItems {
+  padding: 5px 0;
+}
+
+/* input bar */
+.classCard__addItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  height: 27px;
+  padding: 2px 5px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.classCard__addItem > form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.classCard__addItem > form > input {
+  display: flex;
+  flex: 1;
+  border: none;
+  outline: none;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.classCard__addBtn {
+  color: var(--main-color) !important;
+  padding: 0 !important;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 768px) {
+  .classCard__remove {
+    display: none;
+  }
+}
