@@ -1,4 +1,6 @@
-This is a todo list website application I created for tracking school work across classes. Users can login using their email, add classes to their profile, and then add and check off/complete tasks as the day progresses. (Checked tasks will be deleted automatically on page refresh) Data is stored and encrypted using Google Firestore.
+# on-track
+
+This is a todo list website I created for tracking school work across classes. Users can login using their email, add classes to their profile, and then add and check off/complete tasks as the day progresses. (Checked tasks will be deleted automatically on page refresh) Data is stored and encrypted using Google Firestore. Personal goals can also be added to the side bar, from the desktop implementation, which are also retained until checked off/completed.
 
 ## demos
 
